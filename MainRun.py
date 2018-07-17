@@ -2,7 +2,7 @@
 """
 Created on Sun Jul  8 13:04:41 2018
 
-@author: Raghav
+@author: Dhaval
 """
 
 from dashboard import MainDashboard
@@ -59,7 +59,6 @@ def exec_menu(choice):
 #strating of signin menu
    
     
-
 def track_order():
     print("\n\n----------------------------------------------------------------------")
     print("--------------- Track your order with Google Maps --------------------")
@@ -88,11 +87,8 @@ def track_order():
         print("------------------------------")
         print("------------------------------")
         import webbrowser
-        #url="https://www.google.com/maps/dir/?api=1&origin="+coriobj.status+"&destination="+custobj.city+"&travelmode=driving"
         url="https://www.google.com/maps/dir/?api=1&origin="+coriobj.status+"&destination="+custobj.city
         webbrowser.open(url, autoraise=True)
-        #print(url)
-
     else:
         print("Sorry, It seems like entered trackid doesn't exist :\ ")
     
@@ -109,8 +105,6 @@ def gotoclassdashboard(putphone):
 
     cmpobj=MainDashboard(putphone)
     gotfullname=cmpobj.fullname.upper()
-    
-    
     print("\n\n")
     print("----------------------------------------------------------------------")
     print("------------------------- Welcome ------------------------------------")
